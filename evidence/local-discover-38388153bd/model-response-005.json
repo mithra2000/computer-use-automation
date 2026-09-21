@@ -1,0 +1,7 @@
+{
+  "action": "click",
+  "target_id": "faac08a52e3b",
+  "input_binding": null,
+  "reason": "Click on the Savings account link to view the account details and retrieve the current savings balance for member 12345.",
+  "candidate_outputs": null
+}

@@ -1,0 +1,7 @@
+{
+  "action": "click",
+  "target_id": "01d14ee95005",
+  "input_binding": null,
+  "reason": "Submit member search with the ID that was previously filled in the input field",
+  "candidate_outputs": null
+}

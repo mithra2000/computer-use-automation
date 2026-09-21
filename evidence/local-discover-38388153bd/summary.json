@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "capability": "get_savings_balance",
+  "outputs": {
+    "balance": "2500.50",
+    "currency": "USD"
+  },
+  "outcome": null,
+  "error_code": null,
+  "step": null,
+  "expected": null,
+  "observed": null,
+  "evidence_reference": null,
+  "run_id": "local-discover-38388153bd",
+  "session_id": "f384c8398f884914ace6d59f71954679"
+}

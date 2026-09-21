@@ -1,0 +1,7 @@
+{
+  "action": "click",
+  "target_id": "058da6b77750",
+  "input_binding": null,
+  "reason": "Click \"View member\" link to access member 12345's profile and retrieve their savings balance",
+  "candidate_outputs": null
+}
