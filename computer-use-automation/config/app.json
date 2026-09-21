@@ -1,0 +1,11 @@
+{
+  "name": "ledgerdesk-local",
+  "application_family": "LedgerDesk",
+  "version": "1.0",
+  "base_url": "http://127.0.0.1:8000",
+  "entry_point": "/",
+  "approved_origins": ["http://127.0.0.1:8000"],
+  "supported_capabilities": ["get_savings_balance"],
+  "locator_overrides": {},
+  "compatibility_rules": {"visible_marker": "LedgerDesk sandbox · version 1.0"}
+}

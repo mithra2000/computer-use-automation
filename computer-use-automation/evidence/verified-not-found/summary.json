@@ -1,0 +1,13 @@
+{
+  "status": "business_outcome",
+  "capability": "get_savings_balance",
+  "outputs": null,
+  "outcome": "member_not_found",
+  "error_code": null,
+  "step": "step-003",
+  "expected": null,
+  "observed": "member_not_found",
+  "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-not-found/failure-9cb8474f.json",
+  "run_id": "verified-not-found",
+  "session_id": "6e1cad4df3e14249813bfddb58b5e0f9"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "capability": "get_savings_balance",
+  "outputs": {
+    "balance": "8100.25",
+    "currency": "USD"
+  },
+  "outcome": null,
+  "error_code": null,
+  "step": null,
+  "expected": null,
+  "observed": null,
+  "evidence_reference": null,
+  "run_id": "verified-slow-load",
+  "session_id": "26f4b35c47444bc9a2b1e66b0e406d8c"
+}

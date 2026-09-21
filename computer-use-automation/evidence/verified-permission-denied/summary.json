@@ -1,0 +1,13 @@
+{
+  "status": "hard_failure",
+  "capability": "get_savings_balance",
+  "outputs": null,
+  "outcome": null,
+  "error_code": "PERMISSION_DENIED",
+  "step": "step-004",
+  "expected": null,
+  "observed": "Application denied account access",
+  "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-permission-denied/failure-b5bec453.json",
+  "run_id": "verified-permission-denied",
+  "session_id": "a60be42b256f4867b7ace32d3dd2350d"
+}

@@ -1,0 +1,7 @@
+{
+  "action": "click",
+  "target_id": "058da6b77750",
+  "input_binding": null,
+  "reason": "The result matches member 12345; open its details to locate the savings account.",
+  "candidate_outputs": null
+}

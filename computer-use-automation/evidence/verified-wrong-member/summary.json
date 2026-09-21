@@ -1,0 +1,13 @@
+{
+  "status": "hard_failure",
+  "capability": "get_savings_balance",
+  "outputs": null,
+  "outcome": null,
+  "error_code": "RECOVERY_EXHAUSTED",
+  "step": "step-004",
+  "expected": "Member details / Accounts",
+  "observed": "condition not satisfied within bound",
+  "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-wrong-member/failure-456dbbe3.json",
+  "run_id": "verified-wrong-member",
+  "session_id": "cff2cfc8987f465993c0f92124e1d9ae"
+}

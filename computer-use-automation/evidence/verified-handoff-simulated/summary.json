@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "capability": "get_savings_balance",
+  "outputs": {
+    "balance": "8100.25",
+    "currency": "USD"
+  },
+  "outcome": null,
+  "error_code": null,
+  "step": null,
+  "expected": null,
+  "observed": null,
+  "evidence_reference": null,
+  "run_id": "verified-handoff-simulated",
+  "session_id": "038e02c3b53546c2a87715357dd924e4"
+}

@@ -1,0 +1,11 @@
+{
+  "intervention_id": "2f59da717734493e86aa3f88a223a3a0",
+  "capability": "get_savings_balance",
+  "goal": null,
+  "run_id": "verified-session-unattended",
+  "session_id": "25176d20fc7d44b2af2775eb54e958a3",
+  "current_step": "step-004",
+  "stop_reason": "SESSION_EXPIRED",
+  "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-session-unattended/failure-de804846.json",
+  "instructions": "Use the existing browser to restore the sandbox session or return to a known checkpoint. Resume explicitly; abort if uncertain."
+}

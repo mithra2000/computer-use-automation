@@ -1,0 +1,36 @@
+{
+  "error_code": "member_not_found",
+  "observation": {
+    "path": "/results",
+    "frames": [
+      {
+        "frame": null,
+        "headings": [
+          "Search results"
+        ],
+        "controls": [
+          {
+            "tag": "a",
+            "type": "",
+            "name": "Back to search",
+            "has_value": false,
+            "target_id": "1b109b0967db"
+          }
+        ],
+        "rows": [],
+        "statuses": [
+          "No member found"
+        ]
+      }
+    ],
+    "targets": {
+      "1b109b0967db": {
+        "strategy": "role",
+        "name": "Back to search",
+        "role": "link",
+        "frame": null,
+        "table": null
+      }
+    }
+  }
+}

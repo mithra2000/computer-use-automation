@@ -1,0 +1,13 @@
+{
+  "status": "intervention_required",
+  "capability": "get_savings_balance",
+  "outputs": null,
+  "outcome": null,
+  "error_code": "SESSION_EXPIRED",
+  "step": "step-004",
+  "expected": null,
+  "observed": "Session expired",
+  "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-session-unattended/failure-e4b6ea05.json",
+  "run_id": "verified-session-unattended",
+  "session_id": "25176d20fc7d44b2af2775eb54e958a3"
+}

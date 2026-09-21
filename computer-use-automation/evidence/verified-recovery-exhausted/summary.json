@@ -1,0 +1,13 @@
+{
+  "status": "hard_failure",
+  "capability": "get_savings_balance",
+  "outputs": null,
+  "outcome": null,
+  "error_code": "RECOVERY_EXHAUSTED",
+  "step": "step-003",
+  "expected": "Search results",
+  "observed": "condition not satisfied within bound",
+  "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-recovery-exhausted/failure-74388f64.json",
+  "run_id": "verified-recovery-exhausted",
+  "session_id": "28062a2661794aceb4052aa9fddd6a83"
+}

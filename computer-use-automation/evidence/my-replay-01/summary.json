@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "capability": "get_savings_balance",
+  "outputs": {
+    "balance": "8100.25",
+    "currency": "USD"
+  },
+  "outcome": null,
+  "error_code": null,
+  "step": null,
+  "expected": null,
+  "observed": null,
+  "evidence_reference": null,
+  "run_id": "my-replay-01",
+  "session_id": "e8851cb04a6e46949dd7559e9411c387"
+}

@@ -1,0 +1,54 @@
+{
+  "error_code": "SESSION_EXPIRED",
+  "observation": {
+    "path": "/member/67890",
+    "frames": [
+      {
+        "frame": null,
+        "headings": [
+          "Session expired"
+        ],
+        "controls": [
+          {
+            "tag": "input",
+            "type": "password",
+            "name": "Sandbox password (any value)",
+            "has_value": false
+          },
+          {
+            "tag": "button",
+            "type": "submit",
+            "name": "Restore session",
+            "has_value": false,
+            "target_id": "cc0943651130"
+          },
+          {
+            "tag": "a",
+            "type": "",
+            "name": "Back to search",
+            "has_value": false,
+            "target_id": "1b109b0967db"
+          }
+        ],
+        "rows": [],
+        "statuses": []
+      }
+    ],
+    "targets": {
+      "cc0943651130": {
+        "strategy": "role",
+        "name": "Restore session",
+        "role": "button",
+        "frame": null,
+        "table": null
+      },
+      "1b109b0967db": {
+        "strategy": "role",
+        "name": "Back to search",
+        "role": "link",
+        "frame": null,
+        "table": null
+      }
+    }
+  }
+}

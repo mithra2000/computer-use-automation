@@ -1,0 +1,31 @@
+name: read-only-bank-v1
+allowed_origins:
+  - http://127.0.0.1:8000
+allowed_routes:
+  - ^/$
+  - ^/enter$
+  - ^/search$
+  - ^/results$
+  - ^/member/[0-9]{5}$
+  - ^/accounts/[0-9]{5}$
+  - ^/balance/[0-9]{5}$
+  - ^/restore$
+allowed_action_types: [navigate, click, fill, extract, check, wait, complete, intervene]
+allowed_controls:
+  button: [Enter sandbox, Search]
+  link: [View member, Savings account, Back to search]
+  label: [Member ID]
+  table_cell: [Member ID, Account type, Balance, Currency]
+  heading: [Sandbox entry, Member search, Search results, Member details, Accounts, Savings account, Session expired, Access denied]
+blocked_action_categories: [transfer, delete, change credentials, withdraw, payment, close account]
+allowed_frames: [accounts]
+max_retries: 2
+action_timeout_ms: 800
+max_action_timeout_ms: 5000
+sensitive_fields: [password, token, secret, authorization, api_key, personal_name]
+redaction_rules:
+  mask_member_ids: false
+  mask_financial_values: false
+navigation_rules:
+  allowed_query_keys: [member_id, scenario]
+  allow_popups: false

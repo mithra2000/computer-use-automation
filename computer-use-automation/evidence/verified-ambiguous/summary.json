@@ -1,0 +1,13 @@
+{
+  "status": "intervention_required",
+  "capability": "get_savings_balance",
+  "outputs": null,
+  "outcome": null,
+  "error_code": "AMBIGUOUS_TARGET",
+  "step": "step-003",
+  "expected": "one match",
+  "observed": "2",
+  "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-ambiguous/failure-12b3a803.json",
+  "run_id": "verified-ambiguous",
+  "session_id": "3f9556660fd544c099cc04db4ed3a22c"
+}

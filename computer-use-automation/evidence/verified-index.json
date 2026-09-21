@@ -1,0 +1,154 @@
+[
+  {
+    "status": "success",
+    "capability": "get_savings_balance",
+    "outputs": {
+      "balance": "8100.25",
+      "currency": "USD"
+    },
+    "outcome": null,
+    "error_code": null,
+    "step": null,
+    "expected": null,
+    "observed": null,
+    "evidence_reference": null,
+    "run_id": "verified-replay",
+    "session_id": "004de30a449b44a4837602d879f70b01"
+  },
+  {
+    "status": "business_outcome",
+    "capability": "get_savings_balance",
+    "outputs": null,
+    "outcome": "member_not_found",
+    "error_code": null,
+    "step": "step-003",
+    "expected": null,
+    "observed": "member_not_found",
+    "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-not-found/failure-9cb8474f.json",
+    "run_id": "verified-not-found",
+    "session_id": "6e1cad4df3e14249813bfddb58b5e0f9"
+  },
+  {
+    "status": "success",
+    "capability": "get_savings_balance",
+    "outputs": {
+      "balance": "8100.25",
+      "currency": "USD"
+    },
+    "outcome": null,
+    "error_code": null,
+    "step": null,
+    "expected": null,
+    "observed": null,
+    "evidence_reference": null,
+    "run_id": "verified-slow-load",
+    "session_id": "26f4b35c47444bc9a2b1e66b0e406d8c"
+  },
+  {
+    "status": "intervention_required",
+    "capability": "get_savings_balance",
+    "outputs": null,
+    "outcome": null,
+    "error_code": "SESSION_EXPIRED",
+    "step": "step-004",
+    "expected": null,
+    "observed": "Session expired",
+    "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-session-unattended/failure-e4b6ea05.json",
+    "run_id": "verified-session-unattended",
+    "session_id": "25176d20fc7d44b2af2775eb54e958a3"
+  },
+  {
+    "status": "success",
+    "capability": "get_savings_balance",
+    "outputs": {
+      "balance": "8100.25",
+      "currency": "USD"
+    },
+    "outcome": null,
+    "error_code": null,
+    "step": null,
+    "expected": null,
+    "observed": null,
+    "evidence_reference": null,
+    "run_id": "verified-handoff-simulated",
+    "session_id": "038e02c3b53546c2a87715357dd924e4"
+  },
+  {
+    "status": "policy_blocked",
+    "capability": "get_savings_balance",
+    "outputs": null,
+    "outcome": null,
+    "error_code": "POLICY_BLOCKED",
+    "step": null,
+    "expected": null,
+    "observed": "Irreversible banking operation blocked",
+    "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-policy-block/failure-5586e619.json",
+    "run_id": "verified-policy-block",
+    "session_id": "39efdd3bd76643f29ef9f460ae2530f1"
+  },
+  {
+    "status": "intervention_required",
+    "capability": "get_savings_balance",
+    "outputs": null,
+    "outcome": null,
+    "error_code": "AMBIGUOUS_TARGET",
+    "step": "step-003",
+    "expected": "one match",
+    "observed": "2",
+    "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-ambiguous/failure-12b3a803.json",
+    "run_id": "verified-ambiguous",
+    "session_id": "3f9556660fd544c099cc04db4ed3a22c"
+  },
+  {
+    "status": "hard_failure",
+    "capability": "get_savings_balance",
+    "outputs": null,
+    "outcome": null,
+    "error_code": "PERMISSION_DENIED",
+    "step": "step-004",
+    "expected": null,
+    "observed": "Application denied account access",
+    "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-permission-denied/failure-b5bec453.json",
+    "run_id": "verified-permission-denied",
+    "session_id": "a60be42b256f4867b7ace32d3dd2350d"
+  },
+  {
+    "status": "hard_failure",
+    "capability": "get_savings_balance",
+    "outputs": null,
+    "outcome": null,
+    "error_code": "RECOVERY_EXHAUSTED",
+    "step": "step-004",
+    "expected": "Member details / Accounts",
+    "observed": "condition not satisfied within bound",
+    "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-wrong-member/failure-456dbbe3.json",
+    "run_id": "verified-wrong-member",
+    "session_id": "cff2cfc8987f465993c0f92124e1d9ae"
+  },
+  {
+    "status": "hard_failure",
+    "capability": "get_savings_balance",
+    "outputs": null,
+    "outcome": null,
+    "error_code": "RECOVERY_EXHAUSTED",
+    "step": "step-003",
+    "expected": "Search results",
+    "observed": "condition not satisfied within bound",
+    "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-recovery-exhausted/failure-74388f64.json",
+    "run_id": "verified-recovery-exhausted",
+    "session_id": "28062a2661794aceb4052aa9fddd6a83"
+  },
+  {
+    "status": "hard_failure",
+    "capability": "get_savings_balance",
+    "outputs": null,
+    "outcome": null,
+    "error_code": "UNSUPPORTED_APP_VERSION",
+    "step": "initialization",
+    "expected": null,
+    "observed": "Application identity/version does not match profile",
+    "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-version-mismatch/failure-414b7199.json",
+    "run_id": "verified-version-mismatch",
+    "session_id": "2a796cc2829142a39bf52a20ba682ca1"
+  }
+]

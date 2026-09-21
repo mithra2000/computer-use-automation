@@ -1,0 +1,20 @@
+{
+  "error_code": "PERMISSION_DENIED",
+  "observation": {
+    "path": "/member/67890",
+    "frames": [
+      {
+        "frame": null,
+        "headings": [
+          "Access denied"
+        ],
+        "controls": [],
+        "rows": [],
+        "statuses": [
+          "Permission denied for account access."
+        ]
+      }
+    ],
+    "targets": {}
+  }
+}

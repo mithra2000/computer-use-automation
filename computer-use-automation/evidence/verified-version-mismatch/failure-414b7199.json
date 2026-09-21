@@ -1,0 +1,34 @@
+{
+  "error_code": "UNSUPPORTED_APP_VERSION",
+  "observation": {
+    "path": "/",
+    "frames": [
+      {
+        "frame": null,
+        "headings": [
+          "Sandbox entry"
+        ],
+        "controls": [
+          {
+            "tag": "button",
+            "type": "submit",
+            "name": "Enter sandbox",
+            "has_value": false,
+            "target_id": "6d05f76720dd"
+          }
+        ],
+        "rows": [],
+        "statuses": []
+      }
+    ],
+    "targets": {
+      "6d05f76720dd": {
+        "strategy": "role",
+        "name": "Enter sandbox",
+        "role": "button",
+        "frame": null,
+        "table": null
+      }
+    }
+  }
+}

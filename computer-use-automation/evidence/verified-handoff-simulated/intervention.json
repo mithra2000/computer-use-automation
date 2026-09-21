@@ -1,0 +1,11 @@
+{
+  "intervention_id": "6d04e9c5422d4422b176255a5d22a54a",
+  "capability": "get_savings_balance",
+  "goal": null,
+  "run_id": "verified-handoff-simulated",
+  "session_id": "038e02c3b53546c2a87715357dd924e4",
+  "current_step": "step-004",
+  "stop_reason": "SESSION_EXPIRED",
+  "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-handoff-simulated/failure-6a4f34f7.json",
+  "instructions": "Use the existing browser to restore the sandbox session or return to a known checkpoint. Resume explicitly; abort if uncertain."
+}

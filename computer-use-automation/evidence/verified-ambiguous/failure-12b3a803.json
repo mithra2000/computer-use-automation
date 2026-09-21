@@ -1,0 +1,52 @@
+{
+  "error_code": "AMBIGUOUS_TARGET",
+  "observation": {
+    "path": "/results",
+    "frames": [
+      {
+        "frame": null,
+        "headings": [
+          "Search results"
+        ],
+        "controls": [
+          {
+            "tag": "a",
+            "type": "",
+            "name": "View member",
+            "has_value": false,
+            "target_id": "058da6b77750"
+          },
+          {
+            "tag": "a",
+            "type": "",
+            "name": "View member",
+            "has_value": false,
+            "target_id": "058da6b77750"
+          }
+        ],
+        "rows": [
+          [
+            "Member ID",
+            "Name",
+            "Action"
+          ],
+          [
+            "67890",
+            "[REDACTED]",
+            "View member View member"
+          ]
+        ],
+        "statuses": []
+      }
+    ],
+    "targets": {
+      "058da6b77750": {
+        "strategy": "role",
+        "name": "View member",
+        "role": "link",
+        "frame": null,
+        "table": null
+      }
+    }
+  }
+}

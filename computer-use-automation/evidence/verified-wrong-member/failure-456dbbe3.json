@@ -1,0 +1,76 @@
+{
+  "error_code": "RECOVERY_EXHAUSTED",
+  "observation": {
+    "path": "/member/67890",
+    "frames": [
+      {
+        "frame": null,
+        "headings": [
+          "Member details"
+        ],
+        "controls": [
+          {
+            "tag": "a",
+            "type": "",
+            "name": "Back to search",
+            "has_value": false,
+            "target_id": "1b109b0967db"
+          }
+        ],
+        "rows": [
+          [
+            "Member ID",
+            "11111"
+          ],
+          [
+            "Name",
+            "[REDACTED]"
+          ]
+        ],
+        "statuses": []
+      },
+      {
+        "frame": "accounts",
+        "headings": [
+          "Accounts"
+        ],
+        "controls": [
+          {
+            "tag": "a",
+            "type": "",
+            "name": "Savings account",
+            "has_value": false,
+            "target_id": "faac08a52e3b"
+          }
+        ],
+        "rows": [
+          [
+            "Account type",
+            "Open"
+          ],
+          [
+            "Savings",
+            "Savings account"
+          ]
+        ],
+        "statuses": []
+      }
+    ],
+    "targets": {
+      "1b109b0967db": {
+        "strategy": "role",
+        "name": "Back to search",
+        "role": "link",
+        "frame": null,
+        "table": null
+      },
+      "faac08a52e3b": {
+        "strategy": "role",
+        "name": "Savings account",
+        "role": "link",
+        "frame": "accounts",
+        "table": null
+      }
+    }
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "schema_version": "1.0",
+  "capability_name": "get_savings_balance",
+  "capability_version": "1.0.0",
+  "app_profile": "ledgerdesk-local",
+  "inputs": {
+    "member_id": {
+      "type": "string",
+      "pattern": "^[0-9]{5}$",
+      "required": true
+    }
+  },
+  "outputs": {
+    "balance": {
+      "type": "decimal_string",
+      "source": {
+        "strategy": "table_cell",
+        "name": "Balance",
+        "role": null,
+        "frame": "accounts",
+        "table": "Account summary"
+      }
+    },
+    "currency": {
+      "type": "currency_code",
+      "source": {
+        "strategy": "table_cell",
+        "name": "Currency",
+        "role": null,
+        "frame": "accounts",
+        "table": "Account summary"
+      }
+    }
+  },
+  "steps": [
+    {
+      "step_id": "step-001",
+      "action_type": "click",
+      "target": {
+        "strategy": "role",
+        "name": "Enter sandbox",
+        "role": "button",
+        "frame": null,
+        "table": null
+      },
+      "input_binding": null,
+      "route_ref": null,
+      "before": {
+        "name": "Sandbox entry",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Sandbox entry",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          }
+        ]
+      },
+      "checkpoint": {
+        "name": "Member search",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Member search",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          }
+        ]
+      },
+      "timeout_ms": 800,
+      "retry_policy": {
+        "max_attempts": 3,
+        "idempotent": true
+      },
+      "risk_classification": "session_bootstrap"
+    },
+    {
+      "step_id": "step-002",
+      "action_type": "fill",
+      "target": {
+        "strategy": "label",
+        "name": "Member ID",
+        "role": null,
+        "frame": null,
+        "table": null
+      },
+      "input_binding": "member_id",
+      "route_ref": null,
+      "before": {
+        "name": "Member search",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Member search",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          }
+        ]
+      },
+      "checkpoint": {
+        "name": "Member search / input-bound",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Member search",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          },
+          {
+            "target": {
+              "strategy": "label",
+              "name": "Member ID",
+              "role": null,
+              "frame": null,
+              "table": null
+            },
+            "operator": "equals_input",
+            "value": null,
+            "parameter": "member_id"
+          }
+        ]
+      },
+      "timeout_ms": 800,
+      "retry_policy": {
+        "max_attempts": 3,
+        "idempotent": true
+      },
+      "risk_classification": "read_only"
+    },
+    {
+      "step_id": "step-003",
+      "action_type": "click",
+      "target": {
+        "strategy": "role",
+        "name": "Search",
+        "role": "button",
+        "frame": null,
+        "table": null
+      },
+      "input_binding": null,
+      "route_ref": null,
+      "before": {
+        "name": "Member search",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Member search",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          }
+        ]
+      },
+      "checkpoint": {
+        "name": "Search results",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Search results",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          },
+          {
+            "target": {
+              "strategy": "role",
+              "name": "View member",
+              "role": "link",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          }
+        ]
+      },
+      "timeout_ms": 800,
+      "retry_policy": {
+        "max_attempts": 3,
+        "idempotent": true
+      },
+      "risk_classification": "read_only"
+    },
+    {
+      "step_id": "step-004",
+      "action_type": "click",
+      "target": {
+        "strategy": "role",
+        "name": "View member",
+        "role": "link",
+        "frame": null,
+        "table": null
+      },
+      "input_binding": null,
+      "route_ref": null,
+      "before": {
+        "name": "Search results",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Search results",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          },
+          {
+            "target": {
+              "strategy": "role",
+              "name": "View member",
+              "role": "link",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          }
+        ]
+      },
+      "checkpoint": {
+        "name": "Member details / Accounts",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Member details",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          },
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Accounts",
+              "role": "heading",
+              "frame": "accounts",
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          },
+          {
+            "target": {
+              "strategy": "table_cell",
+              "name": "Member ID",
+              "role": null,
+              "frame": null,
+              "table": "Member details"
+            },
+            "operator": "equals_input",
+            "value": null,
+            "parameter": "member_id"
+          }
+        ]
+      },
+      "timeout_ms": 800,
+      "retry_policy": {
+        "max_attempts": 3,
+        "idempotent": true
+      },
+      "risk_classification": "read_only"
+    },
+    {
+      "step_id": "step-005",
+      "action_type": "click",
+      "target": {
+        "strategy": "role",
+        "name": "Savings account",
+        "role": "link",
+        "frame": "accounts",
+        "table": null
+      },
+      "input_binding": null,
+      "route_ref": null,
+      "before": {
+        "name": "Member details / Accounts",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Member details",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          },
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Accounts",
+              "role": "heading",
+              "frame": "accounts",
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          },
+          {
+            "target": {
+              "strategy": "table_cell",
+              "name": "Member ID",
+              "role": null,
+              "frame": null,
+              "table": "Member details"
+            },
+            "operator": "equals_input",
+            "value": null,
+            "parameter": "member_id"
+          }
+        ]
+      },
+      "checkpoint": {
+        "name": "Member details / Savings account",
+        "conditions": [
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Member details",
+              "role": "heading",
+              "frame": null,
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          },
+          {
+            "target": {
+              "strategy": "role",
+              "name": "Savings account",
+              "role": "heading",
+              "frame": "accounts",
+              "table": null
+            },
+            "operator": "visible",
+            "value": null,
+            "parameter": null
+          },
+          {
+            "target": {
+              "strategy": "table_cell",
+              "name": "Member ID",
+              "role": null,
+              "frame": null,
+              "table": "Member details"
+            },
+            "operator": "equals_input",
+            "value": null,
+            "parameter": "member_id"
+          }
+        ]
+      },
+      "timeout_ms": 800,
+      "retry_policy": {
+        "max_attempts": 3,
+        "idempotent": true
+      },
+      "risk_classification": "read_only"
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "FINAL_SUCCESS",
+      "conditions": [
+        {
+          "target": {
+            "strategy": "table_cell",
+            "name": "Member ID",
+            "role": null,
+            "frame": null,
+            "table": "Member details"
+          },
+          "operator": "equals_input",
+          "value": null,
+          "parameter": "member_id"
+        },
+        {
+          "target": {
+            "strategy": "table_cell",
+            "name": "Member ID",
+            "role": null,
+            "frame": "accounts",
+            "table": "Account summary"
+          },
+          "operator": "equals_input",
+          "value": null,
+          "parameter": "member_id"
+        },
+        {
+          "target": {
+            "strategy": "table_cell",
+            "name": "Account type",
+            "role": null,
+            "frame": "accounts",
+            "table": "Account summary"
+          },
+          "operator": "equals",
+          "value": "Savings",
+          "parameter": null
+        },
+        {
+          "target": {
+            "strategy": "table_cell",
+            "name": "Balance",
+            "role": null,
+            "frame": "accounts",
+            "table": "Account summary"
+          },
+          "operator": "visible",
+          "value": null,
+          "parameter": null
+        },
+        {
+          "target": {
+            "strategy": "table_cell",
+            "name": "Currency",
+            "role": null,
+            "frame": "accounts",
+            "table": "Account summary"
+          },
+          "operator": "visible",
+          "value": null,
+          "parameter": null
+        }
+      ]
+    }
+  ],
+  "outcome_rules": [
+    {
+      "code": "member_not_found",
+      "condition": {
+        "target": {
+          "strategy": "text",
+          "name": "No member found",
+          "role": null,
+          "frame": null,
+          "table": null
+        },
+        "operator": "visible",
+        "value": null,
+        "parameter": null
+      }
+    }
+  ],
+  "recovery_rules": [
+    {
+      "code": "loading",
+      "strategy": "bounded_wait",
+      "max_attempts": 3
+    },
+    {
+      "code": "session_expired",
+      "strategy": "human",
+      "max_attempts": 3
+    },
+    {
+      "code": "ambiguous",
+      "strategy": "human",
+      "max_attempts": 3
+    }
+  ],
+  "policy_ref": "read-only-bank-v1",
+  "metadata": {
+    "source_run_id": "local-discover-38388153bd",
+    "provider": "anthropic:claude-haiku-4-5-20251001",
+    "locator_strategy": "Exact semantic controls, named frame, scoped table rows; fail on ambiguity",
+    "application_version": "1.0"
+  }
+}

@@ -1,0 +1,10 @@
+[project]
+name = "computer-use-automation"
+version = "1.0.0"
+requires-python = ">=3.11"
+description = "Learn a UI capability once; replay it with deterministic safety checks."
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]

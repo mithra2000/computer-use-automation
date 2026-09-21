@@ -1,0 +1,10 @@
+{
+  "action": "complete",
+  "target_id": null,
+  "input_binding": null,
+  "reason": "Both member details and savings summary identify member 12345; the visible savings balance is 2500.50 USD.",
+  "candidate_outputs": {
+    "balance": "2500.50",
+    "currency": "USD"
+  }
+}

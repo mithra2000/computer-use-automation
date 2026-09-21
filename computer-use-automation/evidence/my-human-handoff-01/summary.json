@@ -1,0 +1,13 @@
+{
+  "status": "hard_failure",
+  "capability": "get_savings_balance",
+  "outputs": null,
+  "outcome": null,
+  "error_code": "AUTOMATION_ERROR",
+  "step": "step-001",
+  "expected": null,
+  "observed": "Unexpected TimeoutError; inspect sanitized failure state",
+  "evidence_reference": "C:\\Users\\Mithr\\Downloads\\computer-use-automation\\computer-use-automation\\evidence\\my-human-handoff-01\\failure-22012ddb.json",
+  "run_id": "my-human-handoff-01",
+  "session_id": "70a9db5985d2490495c8dbcea5063aab"
+}

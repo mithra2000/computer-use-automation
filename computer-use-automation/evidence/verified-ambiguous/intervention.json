@@ -1,0 +1,11 @@
+{
+  "intervention_id": "cd8b1f69b63c42969c8bb4d72e7c06a4",
+  "capability": "get_savings_balance",
+  "goal": null,
+  "run_id": "verified-ambiguous",
+  "session_id": "3f9556660fd544c099cc04db4ed3a22c",
+  "current_step": "step-003",
+  "stop_reason": "AMBIGUOUS_TARGET",
+  "evidence_reference": "/workspace/scratch/88cffaabb249/computer-use-automation/evidence/verified-ambiguous/failure-52a1d4be.json",
+  "instructions": "Use the existing browser to restore the sandbox session or return to a known checkpoint. Resume explicitly; abort if uncertain."
+}
