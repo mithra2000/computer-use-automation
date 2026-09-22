@@ -1,0 +1,11 @@
+{
+  "intervention_id": "448e54d33928461fa4f32539b8a00fb4",
+  "capability": "get_savings_balance",
+  "goal": null,
+  "run_id": "manual-handoff-20260921-212659",
+  "session_id": "ff793e8dbf11478787f4901e884b5ca2",
+  "current_step": "step-004",
+  "stop_reason": "SESSION_EXPIRED",
+  "evidence_reference": "C:\\Users\\Mithr\\Downloads\\computer-use-automation\\evidence\\manual-handoff-20260921-212659\\failure-4a496a5b.json",
+  "instructions": "Use the existing browser to restore the sandbox session or return to a known checkpoint. Resume explicitly; abort if uncertain."
+}
